@@ -1,0 +1,21 @@
+{
+  "name": "nicolasvanhorle_imaginwoo",
+  "version": "1.0.0",
+  "description": "Site officiel du club Imagin'Woo",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FebScap/ImaginWoo.git"
+  },    
+  "author": "Nicolas Vanhorle",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/FebScap/ImaginWoo.git/issues"
+  },
+  "homepage": "https://github.com/FebScap/ImaginWoo.git#readme"
+}

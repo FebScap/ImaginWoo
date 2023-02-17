@@ -1,0 +1,27 @@
+/*Breakpoints*/
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin display-center($dirrection) {
+  display: flex;
+  align-items: center;
+
+  @if ($dirrection == column) {
+    align-content: center;
+  } @else {
+    justify-content: center;
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 5px 15px darken($color-grey, $amount: 18);
+}
